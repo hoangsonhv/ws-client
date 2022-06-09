@@ -14,10 +14,10 @@ public interface ProductService {
     public Call<Product> getProductDetail(@Path("id") int id);
 
     @POST("/api/v1/products")
-    public Call<Product> save(@Body Product product);
+    public Call<Product> save(@Body Product obj);
 
     @PUT("/api/v1/products/{id}")
-    public Call<Product> update(@Body Product product, @Path("id") int id);
+    public Call<Product> update(@Body Product obj, @Path("id") int id);
 
     @DELETE("/api/v1/products/{id}")
     public Call<Product> delete(@Path("id") int id);

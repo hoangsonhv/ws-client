@@ -12,4 +12,13 @@
         <servlet-name>ProductServlet</servlet-name>
         <url-pattern>/products</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateProducrServlet</servlet-name>
+        <servlet-class>com.example.wsclient.controller.CreateProducrServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProducrServlet</servlet-name>
+        <url-pattern>/products/create</url-pattern>
+    </servlet-mapping>
 </web-app>
